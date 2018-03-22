@@ -132,6 +132,10 @@ a:hover{
 	padding-left: 0;
 	padding-right:0;
 }
+.div-no-left-add-right-pad{
+	padding-left: 0;
+	padding-right:8px;
+}
 .div-vid-nav{
 	padding:0;
 	border-top:2px solid #6995ce;
@@ -168,8 +172,8 @@ a:hover{
 	background:#fff;
 	margin-top: 24px;
 }
-.div-wrapper-margin-top{
-	margin-top:110px;
+.div-increase-top-margin{
+	margin-top:125px;
 }
 .div-upload-message{
 	text-align: center;
@@ -201,6 +205,17 @@ a:hover{
 	position:fixed;
 	z-index: 999;
 	background:#000;
+}
+.div-navi-login{
+	position:fixed;
+	z-index: 999;
+	background:#000;
+}
+.div-wrapper-add-top-margin{
+	margin-top:125px;
+}
+.div-wrapper-margin-top{
+	margin-top:110px;
 }
 .modal-header{
 	background:#3A5271;
@@ -249,7 +264,7 @@ h4{
 .h4-categories{
 	font-size:18px;
 	font-weight:bold;
-	color:#fff;
+	color:#000;
 	padding:8px 0 4px 4px;
 }
 p{
@@ -313,10 +328,10 @@ input{
 .btn-grey-background{
 	padding:8px 14px;
 	background:#000;
-	color:#6995ce;
+	color:#fff;
 	font-weight:700;
 	font-size:24px;
-	border:2px solid #6995ce;
+	border:2px solid #000;
 }
 .btn-grey-background:hover{
 	cursor: pointer;
@@ -337,10 +352,10 @@ input{
 .btn-grey-background-upload{
 	padding:2px 8px;
 	background:#000;
-	color:#6995ce;
+	color:#fff;
 	font-weight:700;
 	font-size:16px;
-	border:2px solid #6995ce;
+	border:2px solid #000;
 }
 .btn-grey-background-upload:hover{
 	cursor: pointer;
@@ -414,5 +429,9 @@ iframe{
 	display:none;
 }
 .div-top-nav{margin-bottom:0;}
-.div-main-body, .div-wrapper-margin-top, .div-intro-cover-image{margin-top:0;}
+.div-wrapper-margin-top, .div-main-body{margin-top:0;}
+.div-intro-cover-image{margin-top:-1px;}
+.div-wrapper-add-top-margin{
+	margin-top:140px;
+}
 }
