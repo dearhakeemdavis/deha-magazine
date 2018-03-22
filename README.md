@@ -7,9 +7,9 @@ Created by Hakeem Davis 03/2018
 -My inspiration for developing this site was to gain a better understanding of working with PHP and MySQL<br />
 
   •	Designed a dynamic website using PHP and MySQL to load videos and their descriptions from a database<br />
-  •	Created a video submission form with login to easily add videos from Vimeo<br />
-  • The form uses Vimeo's API to add videos to their chosen category once the Vimeo video id is entered<br />
-  • Screenshots of the original site is in the 'img' folder.
+  •	Created a video submission form with login<br />
+  • Using Vimeo's API, the site owner can input the Vimeo video id and select which category it should display under on their page<br />
+  • Screenshots of the original site and login pages are in the 'img' folder.
 
 
 *******************************************************
