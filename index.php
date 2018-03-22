@@ -13,6 +13,29 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script src="js/main.js"></script>
+	<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Tampa",
+   "addressRegion": "Florida",
+   "postalCode": "33606"
+ },
+"areaServed":{
+	"@type": "GeoShape",
+	"addressCountry": "USA"
+},
+"url": "http://www.dehamagazine.com/",
+ "description": "DeHa is a new magazine on the scene bringing you the news in a different way.",
+ "name": "Deha Magazine",
+ "legalName": "Deha Magazine",
+ "logo": "http://www.dehamagazine.com/img/deha-logo.png",
+ "image": "http://www.dehamagazine.com/img/deha-logo.png",
+ "priceRange": "$$"
+}
+</script>
 </head>
 <body>
 	<div class="container-fluid">
