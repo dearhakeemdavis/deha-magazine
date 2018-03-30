@@ -3,13 +3,12 @@ Redesign website for Deha Magazine
 ***********************************
 Created by Hakeem Davis 03/2018
 ***********************************
--Dynamic site using PHP and MySQL (the main part of the site's code to show how I used PHP and MySQL)<br />
 -My inspiration for developing this site was to gain a better understanding of working with PHP and MySQL<br />
 
-  •	Designed a dynamic website using PHP and MySQL to load videos and their descriptions from a database<br />
-  •	Created a video submission form with login<br />
-  • Using Vimeo's API, the site owner can add videos from their Vimeo account by entering the video id<br />
-  • The site owner can also add additional categories, videos and categories are then automatically updated to show on their live site<br />
+  •	Designed a dynamic website using PHP and MySQL to load videos and video descriptions from a database<br />
+  •	Created a login section for the site owner to add/remove videos and categories<br />
+  • Submission form uses Vimeo's API to add video embed codes to the database from the video ID entered by the user<br />
+  • The main site pulls from this database, so changes are automatically reflected on the live site<br />
   • Screenshots of the original site and login pages are in the 'img' folder.
 
 
