@@ -49,7 +49,7 @@ var frames = [];
 					var firstSplit = data.html.replace('u003C','<');
 					var secondSplit = firstSplit.replace('003Eu003C','><');
 					frames[".$count."] = secondSplit.replace('u003E','>');
-					display.innerHTML += '<div class=\"col-12 col-sm-6 div-video-frame\"><img class=\"img-thumb-small\" src=\"' + data.thumbnail_url + '\" data-toggle=\"modal\" data-target=\"#".$count."\"><h4 class=\"h4-blue\">' + data.title + '</h4></div>';
+					display.innerHTML += '<div class=\"col-12 col-sm-6 div-video-frame\"><img class=\"img-thumb-small\" src=\"https://res.cloudinary.com/demo/image/vimeo/' + data.video_id + '.jpg\" data-toggle=\"modal\" data-target=\"#".$count."\"><h4 class=\"h4-blue\">' + data.title + '</h4></div>';
 				</script>
 				";
 				$count++;

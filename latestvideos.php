@@ -9,8 +9,10 @@ var frames = [];
 	if($isVideos !== FALSE){
 		if($isVideos->num_rows > 0){
 			$count = 0;
+			$classCounter = 1;
 			while($row = $isVideos->fetch_object())
 			{
+				$classCounter = $classCounter > 3 ? 1 : $classCounter;
 				echo "
 				<script>
 					var display = document.getElementById('div-latest-videos-wrapper');
@@ -18,7 +20,7 @@ var frames = [];
 					var firstSplit = data.html.replace('u003C','<');
 					var secondSplit = firstSplit.replace('003Eu003C','><');
 					frames[".$count."] = secondSplit.replace('u003E','>');
-					display.innerHTML += '<div class=\"col-12 div-latest-video-sections\"><div class=\"row\"><div class=\"col-12 col-sm-5 div-video-frame\"><img class=\"img-thumb-small-percentage\" src=\"' + data.thumbnail_url + '\" data-toggle=\"modal\" data-target=\"#".$count."\"></div><div class=\"col-12 col-sm-7 div-latest-video-descriptions\"><h4>' + data.title + '</h4><p class=\"p-vid-description\">' + data.description + '</p></div></div></div>';
+					display.innerHTML += '<div class=\"col-12 div-latest-video-sections\"><div class=\"row\"><div class=\"col-12 col-sm-5 div-video-frame\"><img class=\"img-thumb-small-percentage".$classCounter++."\" src=\"https://res.cloudinary.com/demo/image/vimeo/' + data.video_id + '.jpg\" data-toggle=\"modal\" data-target=\"#".$count."\"></div><div class=\"col-12 col-sm-7 div-latest-video-descriptions\"><h4>' + data.title + '</h4><p class=\"p-vid-description\">' + data.description + '</p></div></div></div>';
 				</script>
 				";
 
